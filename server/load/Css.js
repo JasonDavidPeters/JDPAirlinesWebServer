@@ -1,6 +1,8 @@
 var fs = require('fs');	
 var dir;
-var webDir = "../website";
+var global = require("../util/GlobalVars.js");
+var webDir = global.webDir;
+
 	function checkCss(url) {
 		// check url for .css extension
 		if (url != null && url.includes(".css")) {

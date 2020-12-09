@@ -7,7 +7,6 @@
 	request url = /flights, send flights.html
 */
 var fs = require('fs');
-var css = require('./Css.js');
 
 module.exports.routeClient=function routeClient(request, response) {
 	response.writeHead('200', {'Content-Type': 'text/html'});
