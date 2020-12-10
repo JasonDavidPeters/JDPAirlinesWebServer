@@ -1,0 +1,12 @@
+airports=[
+{
+ "name" : "Portland International Airport",
+ "code" : "PDX",
+ "country" : "United States"
+},
+{
+ "name" : "London Gatwick Airport",
+ "code" : "LGW",
+ "country" : "United Kingdom"
+}
+]
