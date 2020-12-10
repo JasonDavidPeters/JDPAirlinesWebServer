@@ -8,13 +8,23 @@
 </head>
 
 <body> 
-	<div class="logo">
-		Logo
+	<div class="navBar">
+		<ul> <a href="/home">Home</a></ul>
+		<ul><a href="/flights">Flights</a></ul>
+		<ul><a href="/contact">Contact</a></ul>
+		<ul><a href="/about">About</a></ul>
+		<ul><a href="/login">Login</a></ul>
+		<ul><a href="/register">Register</a></ul>
 	</div>
+	<img class="logo" src="./assets/images/logo.png"> </img>
 
 	<div class="searchBox">
 		<img id="airplane" src="./assets/images/airplane.png"></img>
 		<form>
+		<div class="radioBtns">
+			<input id="oneWay" type="radio" name="flightType">One-way</input>
+			<input id="return" type="radio" name="flightType">Return</input>
+		</div>
 			<div class="labelInputGroupMaster">
 				<label id="searchBoxLabel" for="flyingFrom"> From </label>
 				<input id="flyingFrom" type="text"> </input>
@@ -35,11 +45,28 @@
 							</div>
 					</div>
 			</div>
+			<button id="button">Search Flights</button>
 		</form>
 	</div>
 	<script type="text/javascript">
-		var searchBox = document.getElementById("flyingFrom");
-		searchBox.addEventListener("input", autoComplete);
+		var from = document.getElementById("flyingFrom");
+		var to = document.getElementById("flyingTo");
+		from.addEventListener("input", autoComplete);
+		to.addEventListener("input", autoComplete);
+		
+		from.addEventListener("focusout", removeQuery);
+		to.addEventListener("focusout", removeQuery);
+		
+		var oneWay = document.getElementById("oneWay");
+		var returnBtn = document.getElementById("return");
+		returnBtn.addEventListener("click", e => {
+			if (returnBtn.value == 'on')
+				document.getElementById("returnDate").disabled=false;
+		});
+		oneWay.addEventListener("click", e => {
+			if (oneWay.value == 'on')
+				document.getElementById("returnDate").disabled=true;
+		});
 	</script>
 </body>
 

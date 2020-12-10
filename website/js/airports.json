@@ -1,12 +1,247 @@
 airports=[
 {
- "name" : "Portland International Airport",
- "code" : "PDX",
- "country" : "United States"
+ "name" : "Birmingham International Airport",
+ "code" : "BHM",
+ "state" : "Alabama"
 },
 {
- "name" : "London Gatwick Airport",
- "code" : "LGW",
- "country" : "United Kingdom"
+ "name" : "Dothan Regional Airport",
+ "code" : "DHN",
+ "state" : "Alabama"
+},
+{
+ "name" : "Huntsville International Airport",
+ "code" : "HSV",
+ "state" : "Alabama"
+},
+{
+ "name" : "Mobile",
+ "code" : "MOB",
+ "state" : "Alabama"
+},
+{
+ "name" : "Montgomery",
+ "code" : "MGM",
+ "state" : "Alabama"
+},
+{
+ "name" : "Anchorage International Airport",
+ "code" : "ANC",
+ "state" : "Alaska"
+},
+{
+ "name" : "Fairbanks International Airport",
+ "code" : "FAI",
+ "state" : "Alaska"
+},
+{
+ "name" : "Juneau International Airport",
+ "code" : "JNU",
+ "state" : "Alaska"
+},
+{
+ "name" : "Flagstaff",
+ "code" : "FLG",
+ "state" : "Arizona"
+},
+{
+ "name" : "Phoenix Sky Harbor International Airport",
+ "code" : "PHX",
+ "state" : "Arizona"
+},
+{
+ "name" : "Tucson International Airport",
+ "code" : "TUS",
+ "state" : "Arizona"
+},
+{
+ "name" : "Yuma International Airport",
+ "code" : "YUM",
+ "state" : "Arizona"
+},
+{
+ "name" : "Fayette",
+ "code" : "FYV",
+ "state" : "Arkansas"
+},
+{
+ "name" : "Little Rock National Airport",
+ "code" : "LIT",
+ "state" : "Arkansas"
+},
+{
+ "name" : "Northwest Arkansas Regional Airport",
+ "code" : "XNA",
+ "state" : "Arkansas"
+},
+{
+ "name" : "Burbank",
+ "code" : "BUR",
+ "state" : "California"
+},
+{
+ "name" : "Fresno",
+ "code" : "FAT",
+ "state" : "California"
+},
+{
+ "name" : "Long Beach",
+ "code" : "LGB",
+ "state" : "California"
+},
+{
+ "name" : "Los Angeles International Airport",
+ "code" : "LAX",
+ "state" : "California"
+},
+{
+ "name" : "Oakland",
+ "code" : "OAK",
+ "state" : "California"
+},
+{
+ "name" : "Ontario",
+ "code" : "ONT",
+ "state" : "California"
+},
+{
+ "name" : "Palm Springs",
+ "code" : "PSP",
+ "state" : "California"
+},
+{
+ "name" : "Sacramento",
+ "code" : "SMF",
+ "state" : "California"
+},
+{
+ "name" : "San Diego",
+ "code" : "SFO",
+ "state" : "California"
+},
+{
+ "name" : "San Francisco International Airport",
+ "code" : "SFO",
+ "state" : "California"
+},
+{
+ "name" : "San Jose",
+ "code" : "SJC",
+ "state" : "California"
+},
+{
+ "name" : "Santa Ana",
+ "code" : "SNA",
+ "state" : "California"
+},
+{
+ "name" : "Aspen",
+ "code" : "ASE",
+ "state" : "Colorado"
+},
+{
+ "name" : "Colorado Springs",
+ "code" : "COS",
+ "state" : "Colorado"
+},
+{
+ "name" : "Denver International Airport",
+ "code" : "DEN",
+ "state" : "Colorado"
+},
+{
+ "name" : "Grand Junction",
+ "code" : "GJT",
+ "state" : "GJT"
+},
+{
+ "name" : "Pueblo",
+ "code" : "PUB",
+ "state" : "Colorado"
+},
+{
+ "name" : "Hartford",
+ "code" : "BDL",
+ "state" : "Conneticut"
+},
+{
+ "name" : "Tweed New Haven",
+ "code" : "HVN",
+ "state" : "Colorado"
+},
+{
+ "name" : "Washington, Dulles International Airport",
+ "code" : "IAD",
+ "state" : "District of Columba"
+},
+{
+ "name" : "Washington National Airport",
+ "code" : "DCA",
+ "state" : "Washington National Airport"
+},
+{
+ "name" : "Daytona Beach",
+ "code" : "DAB",
+ "state" : "Florida"
+},
+{
+ "name" : "Fort Lauterdale-Hollywood International Airport",
+ "code" : "FLL",
+ "state" : "Florida"
+},
+{
+ "name" : "Fort Meyers",
+ "code" : "RSW",
+ "state" : "Florida"
+},
+{
+ "name" : "Jacksonville",
+ "code" : "JAX",
+ "state" : "Florida"
+},
+{
+ "name" : "Key West International Airport",
+ "code" : "EYW",
+ "state" : "Florida"
+},
+{
+ "name" : "Miama International Airport",
+ "code" : "MIA",
+ "state" : "Florida"
+},
+{
+ "name" : "Orlando",
+ "code" : "MCO",
+ "state" : "Florida"
+},
+{
+ "name" : "Pensacola",
+ "code" : "PNS",
+ "state" : "Florida"
+},
+{
+ "name" : "St. Petersburg",
+ "code" : "PIE",
+ "state" : "Florida"
+},
+{
+ "name" : "Sarasota",
+ "code" : "SRQ",
+ "state" : "Florida"
+},
+{
+ "name" : "Tampa",
+ "code" : "TPA",
+ "state" : "Florida"
+},
+{
+ "name" : "West Palm Beach",
+ "code" : "PBI",
+ "state" : "Florida"
+},
+{
+ "name" : "Panama City-Bay County International Airport",
+ "code" : "PFN",
+ "state" : "Florida"
 }
 ]

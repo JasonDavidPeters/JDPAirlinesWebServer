@@ -7,13 +7,35 @@ html {
 	font-family: 'Roboto';
 	src: url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap');
 }
+
+.navBar {
+	float: right;
+}
+
+ul {
+	display: inline;
+}
+ul a {
+	text-decoration: none;
+}
+
 .logo {
 	font-family: 'Roboto', Arial;
 	width: 200px;
 	height: 100px;
-	background-color: pink;
-	border-color: black;
-	border-style:solid;
+}
+.radioBtns {
+	color:black;
+	position: absolute;
+	left: 65%;
+	top: 100px;
+}
+#button {
+	position:absolute;
+	top: 275px;
+	left: 40%;
+	height: 55px;
+	width: 100px;
 }
 .searchBox {
 	position: relative;
@@ -49,5 +71,5 @@ html {
 	font-family: 'Roboto', Helvetica;
 	font-weight: bold;
 	position:absolute;	
-	bottom:0;
+	bottom: 0;
 }
