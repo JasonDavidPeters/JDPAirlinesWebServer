@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8"/>
 	<link rel="stylesheet" href="./css/desktop.css"/>
+	<script src="./js/airports.json" type="text/javascript"></script>
 	<script src="./js/autocomplete.js" type="text/javascript"></script>
 </head>
 
@@ -36,6 +37,10 @@
 			</div>
 		</form>
 	</div>
+	<script type="text/javascript">
+		var searchBox = document.getElementById("flyingFrom");
+		searchBox.addEventListener("input", autoComplete);
+	</script>
 </body>
 
 
