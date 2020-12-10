@@ -1,14 +1,13 @@
 var fs = require('fs');	
 var dir;
 var global = require("../util/GlobalVars.js");
-var webDir = global.webDir;
 
 	function checkCss(url) {
 		// check url for .css extension
 		if (url != null && url.includes(".css")) {
 			var start = 0;
 			var end = url.indexOf('.');
-			dir = webDir+url;
+			dir = global.webDir+url;
 			return true;
 		} else {
 			return false;
@@ -23,4 +22,4 @@ var webDir = global.webDir;
 		}
 		return null;
 	}
-module.exports={checkCss, dir, loadCss};
+module.exports={checkCss, loadCss};

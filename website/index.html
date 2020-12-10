@@ -3,10 +3,39 @@
 <head>
 	<meta charset="utf-8"/>
 	<link rel="stylesheet" href="./css/desktop.css"/>
+	<script src=""></script>
 </head>
 
 <body> 
-	<img src="./assets/images/airplane.png"></img>
+	<div class="logo">
+		Logo
+	</div>
+
+	<div class="searchBox">
+		<img id="airplane" src="./assets/images/airplane.png"></img>
+		<form>
+			<div class="labelInputGroupMaster">
+				<label id="searchBoxLabel" for="flyingFrom"> From </label>
+				<input id="flyingFrom" type="text"> </input>
+					<div class="labelInputGroupChild">
+						<label id="searchBoxLabel" for="flyingTo"> To </label>
+						<input id="flyingTo" type="text"> </input>
+							<div class="labelInputGroupChild">
+								<label id="searchBoxLabel" for="departDate"> Depart </label>
+								<input id="departDate" type="date"> </input>
+								<div class="labelInputGroupChild">
+									<label id="searchBoxLabel" for="returnDate"> Return </label>
+									<input id="returnDate" type="date"> </input>
+									<div class="labelInputGroupChild">
+										<label id="searchBoxLabel" for="class"> Class </label>
+										<input id="class" type="text"> </input>
+									</div>
+								</div>
+							</div>
+					</div>
+			</div>
+		</form>
+	</div>
 </body>
 
 

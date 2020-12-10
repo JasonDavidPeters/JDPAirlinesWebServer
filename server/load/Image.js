@@ -1,14 +1,13 @@
 var fs = require('fs');	
 var dir;
 var global = require("../util/GlobalVars.js");
-var webDir = global.webDir;
 
 	function checkImage(url) {
 		// check url for .css extension
-		if (url != null && url.includes(".png")) {
+		if (url != null && url.includes(".png") || url.includes(".jpg")) {
 			var start = 0;
 			var end = url.indexOf('.');
-			dir = webDir+url;
+			dir = global.webDir+url;
 			return true;
 		} else {
 			return false;
