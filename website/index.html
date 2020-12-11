@@ -5,6 +5,7 @@
 	<link rel="stylesheet" href="./css/desktop.css"/>
 	<script src="./js/airports.json" type="text/javascript"></script>
 	<script src="./js/autocomplete.js" type="text/javascript"></script>
+	<script src="./js/validation.js" type="text/javascript"></script>
 </head>
 
 <body> 
@@ -19,11 +20,11 @@
 	<img class="logo" src="./assets/images/logo.png"> </img>
 
 	<div class="searchBox">
-		<img id="airplane" src="./assets/images/airplane.png"></img>
+		<div id="airplane"></div>
 		<form>
 		<div class="radioBtns">
 			<input id="oneWay" type="radio" name="flightType">One-way</input>
-			<input id="return" type="radio" name="flightType">Return</input>
+			<input id="return" checked="checked" type="radio" name="flightType">Return</input>
 		</div>
 			<div class="labelInputGroupMaster">
 				<label id="searchBoxLabel" for="flyingFrom"> From </label>
@@ -39,13 +40,19 @@
 									<input id="returnDate" type="date"> </input>
 									<div class="labelInputGroupChild">
 										<label id="searchBoxLabel" for="class"> Class </label>
-										<input id="class" type="text"> </input>
+										<input list="classList" name="classList" id="class">
+											<datalist id="classList">
+											  <option value="Economy">
+											  <option value="Business">
+											  <option value="First Class">
+											</datalist>
+										</input> <!-- Need to figure out drop down menu type !--> 
 									</div>
 								</div>
 							</div>
 					</div>
 			</div>
-			<button id="button">Search Flights</button>
+			<button id="searchFlights" type="button">Search Flights</button>
 		</form>
 	</div>
 	<script type="text/javascript">
@@ -67,6 +74,7 @@
 			if (oneWay.value == 'on')
 				document.getElementById("returnDate").disabled=true;
 		});
+		document.getElementById("searchFlights").addEventListener("click", validate);
 	</script>
 </body>
 

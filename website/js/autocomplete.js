@@ -16,7 +16,7 @@ function removeQuery() {
 			if (e != null)
 				parent.removeChild(e);
 		}
-	}, 150);
+	}, 300);
 }
 
 function autoComplete() {

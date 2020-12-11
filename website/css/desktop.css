@@ -1,6 +1,5 @@
 html {
-	background-color: #f8f9d2;
-	background-image: linear-gradient(315deg, #f8f9d2 0%, #e8dbfc 74%);
+	background-image: url('../assets/images/background.png');
 	height:100%;
 }
 @font-face {
@@ -21,18 +20,19 @@ ul a {
 
 .logo {
 	font-family: 'Roboto', Arial;
-	width: 200px;
-	height: 100px;
+	position:relative;
+	margin-top: -50px;
+	
 }
 .radioBtns {
-	color:black;
+	color: black;
 	position: absolute;
 	left: 65%;
 	top: 100px;
 }
-#button {
+#searchFlights {
 	position:absolute;
-	top: 275px;
+	top: 250px;
 	left: 40%;
 	height: 55px;
 	width: 100px;
@@ -45,8 +45,12 @@ ul a {
 #airplane {
 	position: absolute;
 	height: 320px;
-	filter: blur(2px);
-	width:90%;
+	opacity: .4;
+	background-color:white;
+	filter: blur(20px);
+	width:95%;
+	border-style: solid;
+	border-color: black;
 }
 .labelInputGroupMaster {
 	position: relative;
@@ -65,8 +69,7 @@ ul a {
 	height: 30px;
 }
 .labelInputGroupMaster label, .labelInputGroupChild label {
-	-webkit-text-stroke: 1.5px black;
-	color: white;
+	color: black;
 	font-size: 20px;
 	font-family: 'Roboto', Helvetica;
 	font-weight: bold;
