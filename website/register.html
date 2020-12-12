@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" href="./css/desktop.css"/>
+	<script src="./js/UserRegistration.js" text="text/javascript"></script>
+</head>
+
+<body class="register"> 
+	<div class="navBar">
+		<ul> <a href="/home">Home</a></ul>
+		<ul><a href="/flights">Flights</a></ul>
+		<ul><a href="/contact">Contact</a></ul>
+		<ul><a href="/about">About</a></ul>
+		<ul><a href="/login">Login</a></ul>
+		<ul><a href="/register">Register</a></ul>
+	</div>
+	<div class="registrationBox">
+		<span class="registrationTitle">Register <hr/></span>
+		<div class="regImageUserbox">
+			<img style="position:absolute;width:30px;height:30px;left:13px;top:8px;" src="./assets/images/usersilouhetteBLACK.png"> </img>
+			<input type="text" placeholder="Username" id="usernameBox"> </input>
+		</div>
+		<div class="regImagePassbox">
+			<img style="position:absolute;width:30px;height:30px;left:13px;top:18px;" src="./assets/images/passwordsilouhetteBLACK.png"> </img>
+			<input type="password" placeholder="Password" id="passwordBox"> </input>
+		</div>
+		<div class="regImageEmailBox">
+			<img style="position:absolute;width:25px;height:25px;left:15px;top:20px;" src="./assets/images/emailIcon.png"> </img>
+			<input type="text" placeholder="Email" id="emailBox"> </input>
+		</div>
+		<button id="submitRegistration">Submit</button>
+	</div>
+	
+	<script>
+		document.getElementById("submitRegistration").addEventListener("click", registerUser);
+	</script>
+</body>
+</html>

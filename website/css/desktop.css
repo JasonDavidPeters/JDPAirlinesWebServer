@@ -1,21 +1,217 @@
-html {
+body.index {
 	background-image: url('../assets/images/background.png');
+	height:100%;
+	width:99%;
+}
+body.login {
+	background-image: url('../assets/images/login_background.png');
+	height:100%;
+}
+body.register {
+	background-color: #485461;
+	background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
 	height:100%;
 }
 @font-face {
 	font-family: 'Roboto';
-	src: url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap');
+	src: url(https://fonts.gstatic.com/s/robotocondensed/v19/ieVg2ZhZI2eCN5jzbjEETS9weq8-19eDpCEobdNZ.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/quicksand/v21/6xK-dSZaM9iE8KbpRA_LJ3z8mH9BOJvgkBgv58a-wg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Bubbler One';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/bubblerone/v9/f0Xy0eqj68ppQV9KBLmAotHA0aI.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+	font-family: 'Heebo';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/heebo/v9/NGSpv5_NC0k9P_v6ZUCbLRAHxK1EICusdUmm.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'HeeboNormal';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/heebo/v9/NGSpv5_NC0k9P_v6ZUCbLRAHxK1EiSysdUmm.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+.registrationBox {
+	position:relative;
+	width: 350px;
+	height: 400px;
+	margin-left: 40%;
+	margin-top: 8%;
+	background-color:white;
+}
+.registrationTitle {
+	position: absolute;
+	font-size: 35px;
+	left: 30%;
+	top: 7%;
+	font-family: 'Heebo';
+}
+.regImageUserbox {
+	position:absolute;
+	top: 30%;
+	width: 100%;
+}
+.regImagePassbox {
+	position:absolute;
+	width:100%;
+	top: 50%;
+}
+.regImageEmailBox {
+	position:absolute;
+	width:100%;
+	top: 70%;
+}
+#submitRegistration {
+	position:absolute;
+	top:89%;
+	bottom:0;
+	width:100%;
+	height: 50px;
+	font-size:18px;
+	font-weight: lighter;
+	text-align: center;
+	background-color:#03c2fc;
+	border:none;
+	color:white;
+	font-family: 'HeeboNormal';
+}
+
+.registrationBox input {
+	position:absolute;
+	height: 50px;
+	width: 80%;
+	left: 15%;
+}
+
+.loginBoxBackdrop, .loginBox {
+	width: 530px;
+	height: 300px;
+}
+
+.loginBoxBackdrop {
+	position:relative;
+	border-style: solid;
+	background-color: black;
+	opacity:.5;
+	filter: blur(1px);
+	margin-left: 30%;
+	margin-top: 10%;
+	
+}
+.loginBox {
+	position:absolute;
+	float: top;
+	left: 31%;
+	top: 21.5%;
+}
+#padlockImage {
+	width: 30px;
+	height: 30px;
+	color:white;
+}
+#loginText {
+	position: absolute;
+	font-family: 'Heebo';
+	font-size: 40px;
+	color:white;
+	font-weight: bolder;
+	bottom: 0;
+	left: 33%;
+	top: 12%;
+}
+.subtext {
+	position: absolute;
+	font-size: 16px;
+	font-family: 'Arial';
+	bottom: 0;
+	top:32%;
+	left:28%;
+}
+#keepSignedInLabel {
+	font-family: 'Roboto';
+	color:white;
+	font-size: 13px;
+}
+.keepLoggedInGroup {
+	position: absolute;
+	top: 88%;
+	left: 8%;
+	bottom: 0;
+}
+#userImage {
+	top: 0;
+	bottom: 0;
+	position: absolute;
+	width: 35px;
+	height: 35px;
+	bottom:0;
+	left: 1%;
+	top:50%;
+}
+#passwordImage {
+	top: 0;
+	bottom: 0;
+	position: absolute;
+	width: 35px;
+	height: 35px;
+	bottom:0;
+	left: 1%;
+	top:70%;
+}
+#usernameInput {
+	position:absolute;
+	width: 80%;
+	height: 30px;
+	bottom:0;
+	left: 8%;
+	top:50%;
+}
+#passwordInput {
+	position:absolute;
+	width: 80%;
+	height: 30px;
+	bottom:0;
+	left: 8%;
+	top:70%;
 }
 
 .navBar {
+	position:absolute;
 	float: right;
+	right:1px;
+	top:0;
 }
 
 ul {
 	display: inline;
 }
 ul a {
+	font-family: 'Bubbler One';
+	color: white;
+	font-size: 24px;
 	text-decoration: none;
+}
+ul a:hover {
+	border-bottom-color:black;
+	border-bottom-width:.5px;
+	border-bottom-style: solid;
 }
 
 .logo {
@@ -40,7 +236,6 @@ ul a {
 .searchBox {
 	position: relative;
 	margin-left:5%;
-	margin-top:5%;
 }
 #airplane {
 	position: absolute;
@@ -71,7 +266,7 @@ ul a {
 .labelInputGroupMaster label, .labelInputGroupChild label {
 	color: black;
 	font-size: 20px;
-	font-family: 'Roboto', Helvetica;
+	font-family: 'Quicksand', Helvetica;
 	font-weight: bold;
 	position:absolute;	
 	bottom: 0;

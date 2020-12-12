@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" href="./css/desktop.css"/>
+	<script type="text/javascript" src="./js/Login.js"></script>
+</head>
+
+<body class ="login">
+	<div class="navBar">
+		<ul> <a href="/home">Home</a></ul>
+		<ul><a href="/flights">Flights</a></ul>
+		<ul><a href="/contact">Contact</a></ul>
+		<ul><a href="/about">About</a></ul>
+		<ul><a href="/login">Login</a></ul>
+		<ul><a href="/register">Register</a></ul>
+	</div>
+	<div class ="loginBoxBackdrop">	</div>
+	<div class="loginBox">
+		<span id="loginText">
+			<img src="./assets/images/padlock1.png" id="padlockImage"></img>
+			Login
+		</span>
+		<span class="subtext"> Please <span style="color:white;font-family:'Quicksand';font-weight:bold;font-size:20px;">Login</span> or <span style="color:white;font-family:'Quicksand';font-weight:bold;font-size:20px;">Register.</span> </span>
+		<form>
+			<div class="usernameGroup">
+				<img src="./assets/images/usersilouhette.png" id="userImage"> </img>
+				<input type="text" placeholder="Username" id="usernameInput"> </input>
+			</div>
+			<div class="passwordGroup">
+				<img src="./assets/images/passwordsilouhette.png" id="passwordImage"> </img>
+				<input type="password" placeholder="Password" id="passwordInput"> </input>
+			</div>
+			<div class="keepLoggedInGroup">
+				<input type="checkbox" id="keepSignedIn"></input>
+				<label for="keepSignedIn" id="keepSignedInLabel">Keep me logged in</label>
+			</div>
+		</form>
+		</div>
+		
+		<script>
+			document.getElementById("usernameInput").addEventListener("keyup", function(event) {
+				if (event.keyCode != 13) return;
+				document.getElementById("passwordInput").focus();
+			});
+			document.getElementById("passwordInput").addEventListener("keyup",checkLogin);
+		</script>
+</body>
+
+</html>
