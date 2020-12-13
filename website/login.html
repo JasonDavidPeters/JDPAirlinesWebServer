@@ -5,6 +5,7 @@
 	<meta charset="utf-8"/>
 	<link rel="stylesheet" href="./css/desktop.css"/>
 	<script type="text/javascript" src="./js/Login.js"></script>
+	<script type="text/javascript" src="./js/Cookies.js"></script>
 </head>
 
 <body class ="login">
@@ -23,6 +24,7 @@
 			Login
 		</span>
 		<span class="subtext"> Please <span style="color:white;font-family:'Quicksand';font-weight:bold;font-size:20px;">Login</span> or <span style="color:white;font-family:'Quicksand';font-weight:bold;font-size:20px;">Register.</span> </span>
+		<span id="loginErrorText" style="position:absolute;color:red;left:25%;top:42%;font-weight:bold;font-family:'Quicksand';visibility:hidden;">Username/password not found!</span>
 		<form>
 			<div class="usernameGroup">
 				<img src="./assets/images/usersilouhette.png" id="userImage"> </img>
@@ -40,6 +42,20 @@
 		</div>
 		
 		<script>
+			if (getCookie("username").length>0) {
+				var login = document.getElementById("loginHyper");
+				var register = document.getElementById("registerHyper");
+				var parent = login.parentElement;
+				var logout = parent.lastChild.cloneNode(true);
+				logout.innerHTML="Logout";
+				logout.id="logoutButton";
+				parent.appendChild(logout);
+				if (login != null) login.parentElement.removeChild(login);
+				if (register != null) register.parentElement.removeChild(register);
+				//logout.style.
+		}
+		if (document.getElementById("logoutButton") != null)
+			document.getElementById("logoutButton").addEventListener("click", logoutHandler);
 			document.getElementById("usernameInput").addEventListener("keyup", function(event) {
 				if (event.keyCode != 13) return;
 				document.getElementById("passwordInput").focus();

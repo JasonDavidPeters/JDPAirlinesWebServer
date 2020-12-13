@@ -9,7 +9,7 @@ function setCookie(key, value, days) {
 }
 
 function getCookie(key) {
-  var name = key + "="; // name=
+  var name = key + "=";
   var decodedCookie = decodeURIComponent(document.cookie);
   var ca = decodedCookie.split(';');
   for(var i = 0; i <ca.length; i++) {
@@ -22,4 +22,8 @@ function getCookie(key) {
     }
   }
   return "";
+}
+
+function logoutHandler() {
+	document.cookie = "username= ; expires = Thu, 01 Jan 1970 00:00:00 GMT"
 }

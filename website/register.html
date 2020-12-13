@@ -15,6 +15,8 @@
 		<ul><a href="/login">Login</a></ul>
 		<ul><a href="/register">Register</a></ul>
 	</div>
+	<div class="registrationBackdrop">
+	</div>
 	<div class="registrationBox">
 		<span class="registrationTitle">Register <hr/></span>
 		<div class="regImageUserbox">
@@ -33,6 +35,20 @@
 	</div>
 	
 	<script>
+				if (getCookie("username").length>0) {
+				var login = document.getElementById("loginHyper");
+				var register = document.getElementById("registerHyper");
+				var parent = login.parentElement;
+				var logout = parent.lastChild.cloneNode(true);
+				logout.innerHTML="Logout";
+				logout.id="logoutButton";
+				parent.appendChild(logout);
+				if (login != null) login.parentElement.removeChild(login);
+				if (register != null) register.parentElement.removeChild(register);
+				//logout.style.
+		}
+		if (document.getElementById("logoutButton") != null)
+			document.getElementById("logoutButton").addEventListener("click", logoutHandler);
 		document.getElementById("submitRegistration").addEventListener("click", registerUser);
 	</script>
 </body>

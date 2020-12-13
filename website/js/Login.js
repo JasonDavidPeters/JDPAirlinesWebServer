@@ -24,8 +24,11 @@ function checkLogin() {
 		if (xhr.readyState == XMLHttpRequest.DONE) {
 			if (xhr.status == 201) {
 				console.log("logged in successfully");
-				// TODO: create cookie
+				setCookie("username",username,30);
+				var url = "/home";
+				window.location.href = url;
 			} else {
+				document.getElementById("loginErrorText").style.visibility="visible";
 				console.log("login error");
 			}
 		}

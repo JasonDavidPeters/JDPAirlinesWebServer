@@ -43,7 +43,7 @@ module.exports.routeClient=function routeClient(request, response) {
 			})
 			stream.pipe(response);
 		break;
-		case '/login':
+		case '/login': // TODO: if the user is logged in then route to home to separate login page, maybe change the login page in client side?
 			if (request.method == 'POST') {
 				request.on('data', function(data) {
 					var userData = JSON.parse(data);
